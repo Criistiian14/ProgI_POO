@@ -1,5 +1,6 @@
 package org.example;
 
+import entidades.Marca;
 import entidades.Producto;
 
 public class Main {
@@ -36,6 +37,24 @@ public class Main {
             producto4.mostrarProducto();
             Producto producto5 = new Producto(5, "Yamaha YY", 2500000, 5 );
             producto5.mostrarProducto();
+            producto5.setNomProducto("Yamaha YY");
+            producto5.mostrarProducto();
+
+            // crea un objeto instancia de la clase marca llamando al constructor con nombre como parametro
+
+            Marca marca1 = new Marca("Zanella");
+
+            marca1.MostrarMarca();
+
+            Marca objMarca = new Marca("Honda");
+            objMarca.MostrarMarca();
+
+            objMarca.setNomMarca("Honda cambiado");
+            objMarca.setId(1);
+
+        System.out.printf(objMarca.toString());
+
+
     }
 
 
